@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Coursera</title>
+    <script type = "text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+  <body ng-app="LunchCheck">
+    <h1>Assignment - 1</h1>
+    <div ng-controller="LunchCheckController">
+      <div>
+        <h3>Enter number of Items in the textbox using comma as a seperator:</h3>
+        <small>I do not consider and empty item, i.e., , , as an item towards to the count</small><br><br>
+        <input type="text" ng-model="input" style="border-color:{{color}}">
+        <button ng-click="foodCheckfunc();">Check If Too Much</button>
+      </div>
+      <div style="color:{{color}};">{{answer}}</div>
+    </div>
+  </body>
+</html>
