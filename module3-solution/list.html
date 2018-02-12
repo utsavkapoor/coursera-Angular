@@ -1,0 +1,8 @@
+<h1>Result</h1>
+<div ng-if="answer.display">Nothing found</div>
+<ul>
+  <li ng-repeat = "item in answer.found">
+    {{ item.short_name}}, {{item.name}}, {{item.description}}
+    <button ng-click="answer.removeData({index: $index})" class="btn btn-danger">Don't want this one!</button>
+  </li>
+</ul>
