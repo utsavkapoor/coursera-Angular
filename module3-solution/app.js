@@ -1,12 +1,12 @@
-(function(){
+(function() {
   'use strict';
 
-  angular.module('NarrowItDownApp',[])
-  .controller('NarrowItDownController',NarrowItDownController)
-  .factory('MenuSearchServiceFactory',MenuSearchServiceFactory)
-  .directive('foundItems',FoundItems);
+  angular.module('NarrowItDownApp', [])
+  .controller('NarrowItDownController', NarrowItDownController)
+  .factory('MenuSearchServiceFactory', MenuSearchServiceFactory)
+  .directive('foundItems', FoundItems);
 
-  function FoundItems(){
+  function FoundItems() {
     var ddo = {
       restrict:'AE',
       scope: {
